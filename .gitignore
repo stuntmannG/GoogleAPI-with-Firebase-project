@@ -1,0 +1,8 @@
+# dependencies & builds
+node_modules/
+.cache/
+build/
+dist/
+*.log
+.env
+.env.*

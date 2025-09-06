@@ -1,0 +1,30 @@
+:root{
+  --corner-img: url("../assets/corner-basket.jpg");
+}
+.page-wrap{
+  min-height:100vh;
+  position:relative;
+  overflow:hidden;
+  background: linear-gradient(180deg, rgba(173,216,230,0.25), rgba(173,216,230,0));
+}
+.corner-image{
+  position:absolute;
+  left:-40px;
+  bottom:-40px;
+  width:360px;
+  height:360px;
+  background-image: var(--corner-img);
+  background-size: cover;
+  background-position: left bottom;
+  opacity:.95;
+  filter: drop-shadow(0 14px 24px rgba(0,0,0,0.2));
+  pointer-events:none;
+}
+@media (max-width:480px){
+  .corner-image{
+    width:280px;
+    height:280px;
+    left:-60px;
+    bottom:-60px;
+  }
+}
